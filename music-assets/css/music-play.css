@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.tab-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.tab-item.active {
+    color: #CC3399;
+}
+.header {
+    width: 100%;
+    background: linear-gradient(#f30 3%, #fff 100%);
+}
+
+.header-search {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.personal-account {
+    width: 38px;
+}
+
+.avatar {
+    width: 100%;
+    border-radius: 50%;
+}
+.search-music {
+    position: relative;
+    width: 70%;
+    display: flex;
+}
+
+.search-music img {
+    height: 20px;
+    top: 10px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+}
+
+.search-input {
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 4px 35px;
+    
+}
+
+.search-mic {
+    position: absolute;
+    right: 12px;
+}
+.new-notify {
+    padding-top: 8px;
+    position: relative;
+}
+
+.new-notify__text {
+    position: absolute;
+    right: 2px;
+    top: 10px;
+    font-size: 4px;
+    padding: 0 2px;color: #f30;
+    background-color: #f30;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+}
+
+.slider {
+    width: 100%;
+}
+
+.carousel-item__img{
+    width: 100%;
+    height: 235px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.category {
+   margin-top: 25px;
+   padding-bottom: 30px;
+}
+
+.contents {
+    padding-bottom: 150px;
+}
+
+
+.column__content-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.content-header__img {
+    width: 40px;
+    padding: 6px;
+    background-color: #00FF00;
+    border-radius: 15px;
+}
+.bg-orange {
+    background-color: rgb(255, 0, 5);
+}
+
+.bg-blue {
+    background-color: rgb(0, 145, 255);
+}
+.bg-red {
+    background-color: rgb(255, 0, 70);
+}
+
+.bg-purple {
+    background-color: rgb(160, 0, 255);
+}
+
+.bg-like{
+    background-color: rgb(45, 0, 255);
+}
+
+.bg-indigo {
+    background-color: rgb(75, 0, 130);
+}
+.content-header__text {
+    padding-top: 10px;
+}
+
+.contents-list__content {
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+}
+/* ẩn đi thanh trượt */
+.contents-list__content::-webkit-scrollbar {
+    display: none;
+}
+
+.contents-list__heading {
+    font-size: 18px;
+    font-weight: 600;
+}
+.content-list__element {
+    margin: 20px 20px 0 0;
+}
+
+.content-list__img {
+    width: 120px;
+    border-radius: 50%;
+}
+.content-list__element-text {
+    text-align: center;
+    padding-top: 8px;
+    font-size: 14px;
+}
+
+

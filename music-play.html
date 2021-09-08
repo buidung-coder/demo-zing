@@ -1,0 +1,676 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="./music-assets/css/music-play.css">
+        <link rel="stylesheet" href="./music-assets/css/individual.css">
+        <link rel="stylesheet" href="./music-assets/css/settings-panel.css">
+        <link rel="stylesheet" href="./music-assets/css/reposive.css">
+		<title>music-play</title>
+</head>
+<body>
+	<div class="music-play">
+        <div class="container row">
+            <div class="tabs">
+                <div class="tab-item col-2 col-md-2 active">
+                    <img src="./music-assets/img-music/icon-tabs/individual.svg" alt="" class="tab-icon fas">
+                    Cá nhân
+                </div>
+                <div class="tab-item col-2 col-md-2">
+                    <img src="./music-assets/img-music/icon-tabs/disc.svg" alt="" class="tab-icon fas">
+                    Khám phá
+                </div>
+                <div class="tab-item col-2 col-md-2">
+                    <img src="./music-assets/img-music/icon-tabs/bar-chart-2.svg" alt="" class="tab-icon fas">
+                    # Chart
+                </div>
+                <div class="tab-item col-2 col-md-2">
+                    <img src="./music-assets/img-music/icon-tabs/radio.svg" alt="" class="tab-icon fas">
+                Raido
+                </div>
+                <div class="tab-item col-2 col-md-2">
+                    <img src="./music-assets/img-music/icon-tabs/eye.svg" alt="" class="tab-icon fas">
+                    Theo dõi
+                </div>
+                    <div class="tab-item col-2 col-md-2">
+                    <img src="./music-assets/player/meh.svg" alt="" class="tab-icon fas">
+                    Đánh giá
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+                            
+        <div class="tab-content">
+            <!-- Tab cá nhân -->
+            <div class="tab-pane active">
+                <div class="individual-header">
+                    <div class="container">
+                        <div class="header-search">
+                            <div class="personal-account">
+                                <img src="./music-assets/img-music/img-acc/saotanguocloi.jpg" alt="" class="avatar">
+                            </div>
+                            <div class="search-music">
+                                <img src="./music-assets/player/search.svg" alt="" class="search-icon">
+                                <input type="text" class="search-input bg-search-input" placeholder="Tìm nhạc trên thiết bị">
+                                <img src="./music-assets/img-music/icon-tabs/mic.svg" alt="" class="search-mic">
+                            </div>
+                            <div class="new-notify">
+                                <img id="setting-icon" src="./music-assets/player/settings.svg" alt="" class="notify-icon">
+                            </div>
+                        </div>
+                    </div>
+                                                    
+                </div>
+                <div class="contents container">
+                    <div class="library">
+                        <div class="library__row">
+                            <div class="library__element">
+                                <i class="fas fa-music library__element-icon bg-blue"></i>
+                                <div class="library__element-text">
+                                    <h6>Bài hát</h6>
+                                    <span>33</span>
+                                </div>    
+                            </div>
+
+                            <div class="library__element">
+                                <i class="fas fa-cloud-upload-alt library__element-icon bg-red"></i>
+                                <div class="library__element-text">
+                                    <h6>Upload</h6>
+                                </div>
+                            </div>
+
+                            <div class="library__element">
+                                <i class="fas fa-video library__element-icon bg-indigo"></i>
+                                <div class="library__element-text">
+                                    <h6>MV</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="library__row">
+                            <div class="library__element">
+                                <i class="fas fa-download library__element-icon bg-purple"></i>
+                                <div class="library__element-text">
+                                    <h6>Trên thiết bị</h6>
+                                    <span>161</span>
+                                </div>
+                            </div>
+
+                            <div class="library__element">
+                                <i class="fas fa-compact-disc library__element-icon bg-like"></i>
+                                <div class="library__element-text">
+                                    <h6>Album</h6>
+                                </div>
+                            </div>
+
+                            <div class="library__element">
+                                <i class="fas fa-users library__element-icon bg-orange"></i>
+                                <div class="library__element-text">
+                                    <h6>Nghệ sĩ</h6>
+                                    <span>12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="synthetic">
+                        <div class="subtabs">
+                            <div class="subtab-content">
+                                <div class="subtab-item active">
+                                    <p class="subtab-item__content">Playlist</p>
+                                </div>
+                                <div class="subtab-item">
+                                    <p class="subtab-item__content">Mix nhạc</p>
+                                </div>
+                                <div class="subtab-item">
+                                    <p class="subtab-item__content">Gần đây</p>
+                                </div>
+                                <div class="line-subtab"></div>
+                            </div>
+                            <div class="subtab-more">
+                                <i class="fas fa-ellipsis-v subtab-more__icon"></i>
+                            </div>
+                        </div>
+                        <div class="synthetic-content">
+                            <!-- SUBTAB LIBRARY  -->
+                            <div class="subtab-pane active">
+                                <div class="subtab-element">
+                                    <i class="fas fa-plus subtab-element__icon bg-blue"></i>
+                                    <h6 >Tạo playlist mới</h6>
+                                </div>
+                                <div class="subtab-element">
+                                    <img src="./music-assets/contents-img/Playlist.jpg" alt="" class="subtab-element__img">
+                                    <div class="subtab-element__content">
+                                        <p class="subtab-element__heading">Playlist#1</p>
+                                        <p class="subtab-element__sub">Nhạc yêu thích</p>
+                                    </div>
+                                </div>
+                                <div class="subtab-element">
+                                    <img src="./music-assets/contents-img/dinhdung.jpg" alt="" class="subtab-element__img">
+                                    <div class="subtab-element__content">
+                                        <p class="subtab-element__heading">Playlist#2</p>
+                                        <p class="subtab-element__sub">Nhạc đang nghe nhiều</p>
+                                    </div>
+                                </div>
+                                <div class="subtab-element">
+                                    <img src="./music-assets/contents-img/adele.jpg" alt="" class="subtab-element__img">
+                                    <div class="subtab-element__content">
+                                        <p class="subtab-element__heading">Playlist#3</p>
+                                        <p class="subtab-element__sub">Đặc biệt</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SUBTAB MIX MUSIC -->
+                            <div class="subtab-pane">
+                                <div class="subtab-mix">
+                                    <div class="subtab-mix__header">
+                                       <div class="mix-header__avatar">
+                                           <img src="./music-assets/contents-img/hoquanghieu.jpg" alt="" class="mix-header__img">
+                                           <i class="fas fa-random mix-header__icon"></i>
+                                       </div>
+                                       <div class="mix-header__title">
+                                           <p class="mix-header__heading">Nhạc hồ quang hiếu có thể bạn sẽ thích</p>
+                                           <span class="subtab-element__sub">50 bài hát</span>
+                                       </div>
+                                    </div>
+                                    <div class="subtab-mix__content">
+                                        <img src="./music-assets/contents-img/hoquanghieu1.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/hoquanghieu2.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/hoquanghieu3.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/hoquanghieu4.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/hoquanghieu5.jpg" alt="" class="mix-content__img">
+                                    </div>
+                                </div>
+                                <div class="subtab-mix">
+                                    <div class="subtab-mix__header">
+                                       <div class="mix-header__avatar">
+                                           <img src="./music-assets/contents-img/Playlist.jpg" alt="" class="mix-header__img">
+                                           <i class="fas fa-random mix-header__icon"></i>
+                                       </div>
+                                       <div class="mix-header__title">
+                                            <p class="mix-header__heading">Những bài hát hay nhát của vương anh tú</p>
+                                            <span class="subtab-element__sub">30 bài hát</span>
+                                        </div>
+                                    </div>
+                                    <div class="subtab-mix__content">
+                                        <img src="./music-assets/contents-img/vuonganhtu1.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/vuonganhtu2.png" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/vuonganhtu3.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/vuonganhtu4.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/vuonganhtu5.jpg" alt="" class="mix-content__img">
+                                    </div>
+                                </div>
+                                <div class="subtab-mix">
+                                    <div class="subtab-mix__header">
+                                       <div class="mix-header__avatar">
+                                           <img src="./music-assets/contents-img/westlife.jpg" alt="" class="mix-header__img">
+                                           <i class="fas fa-random mix-header__icon"></i>
+                                       </div>
+                                       <div class="mix-header__title">
+                                            <p class="mix-header__heading">Những bài hát hay nhất của westlife</p>
+                                            <span class="subtab-element__sub">50 bài hát</span>
+                                        </div>
+                                    </div>
+                                    <div class="subtab-mix__content">
+                                        <img src="./music-assets/contents-img/westlife1.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/westlife2.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/westlife3.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/westlife4.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/westlife5.jpg" alt="" class="mix-content__img">
+                                    </div>
+                                </div>
+                                <div class="subtab-mix">
+                                    <div class="subtab-mix__header">
+                                       <div class="mix-header__avatar">
+                                           <img src="./music-assets/contents-img/mr-siro.jpg" alt="" class="mix-header__img">
+                                           <i class="fas fa-random mix-header__icon"></i>
+                                       </div>
+                                       <div class="mix-header__title">
+                                            <p class="mix-header__heading">Tuyển tập nhạc mr. siro</p>
+                                            <span class="subtab-element__sub">50 bài hát</span>
+                                        </div>
+                                    </div>
+                                    <div class="subtab-mix__content">
+                                        <img src="./music-assets/contents-img/mr-siro1.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/mr-siro.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/mr-siro2.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/mr-siro3.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/mr-siro4.jpg" alt="" class="mix-content__img">
+                                    </div>
+                                </div>
+                                <div class="subtab-mix">
+                                    <div class="subtab-mix__header">
+                                       <div class="mix-header__avatar">
+                                           <img src="./music-assets/contents-img/thanhhung.jpg" alt="" class="mix-header__img">
+                                           <i class="fas fa-random mix-header__icon"></i>
+                                       </div>
+                                       <div class="mix-header__title">
+                                            <p class="mix-header__heading">Tuyển tập nhạc của thanh hưng</p>
+                                             <span class="subtab-element__sub">20 bài hát</span>
+                                        </div>
+                                    </div>
+                                    <div class="subtab-mix__content">
+                                        <img src="./music-assets/contents-img/thanhhung2.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/thanhhung.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/thanhhung4.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/thanhhung1.jpg" alt="" class="mix-content__img">
+                                        <img src="./music-assets/contents-img/thanhhung3.jpg" alt="" class="mix-content__img">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SUBTAB RECENTLY -->
+                            <div class="subtab-pane">
+                                <div class="subtab-recently">
+                                    <img src="./music-assets/contents-img/timemusic.png" alt="" class="recently-img recently-begin__img">
+                                    <div class="recently-content">
+                                        <h6 class="recently-content__title">Bài hát gần nhất</h6>
+                                    </div>
+                                </div>
+                                <div class="subtab-recently">
+                                    <img src="./music-assets/contents-img/hoquanghieu4.jpg" alt="" class="recently-img">
+                                    <div class="recently-content">
+                                        <p class="recently-content__title">Những bài hát hay nhất của Hồ Quang Hiếu</p>
+                                        <p class="subtab-element__sub">Hồ Quang Hiếu</p>
+                                    </div>
+                                </div>
+                                <div class="subtab-recently">
+                                    <img src="./music-assets/contents-img/dinhdung.jpg" alt="" class="recently-img">
+                                    <div class="recently-content">
+                                        <p class="recently-content__title">Playlist#1</p>
+                                        <p class="subtab-element__sub">Bùi Dũng</p>
+                                    </div>
+                                </div>
+                                <div class="subtab-recently">
+                                    <img src="./music-assets/contents-img/adele.jpg" alt="" class="recently-img">
+                                    <div class="recently-content">
+                                        <p class="recently-content__title">Chỉ có thể là Adele</p>
+                                        <p class="subtab-element__sub">Adele</p>
+                                    </div>
+                                </div>
+                                <div class="subtab-recently">
+                                    <img src="./music-assets/contents-img/westlife5.jpg" alt="" class="recently-img">
+                                    <div class="recently-content">
+                                        <p class="recently-content__title">Những bài hát hay nhất của Westlife</p>
+                                        <p class="subtab-element__sub">Westlife</p>
+                                    </div>
+                                </div>
+                                <div class="subtab-recently">
+                                    <img src="./music-assets/contents-img/thanhhung2.jpg" alt="" class="recently-img">
+                                    <div class="recently-content">
+                                        <p class="recently-content__title">Tuyển tập nhạc của Thanh Hưng</p>
+                                        <p class="subtab-element__sub">Thanh Hưng</p>
+                                    </div>
+                                </div>
+                                <div class="subtab-recently">
+                                    <img src="./music-assets/contents-img/vuonganhtu4.jpg" alt="" class="recently-img">
+                                    <div class="recently-content">
+                                        <p class="recently-content__title">Những bài hát hay nhất của Vương Anh Tú</p>
+                                        <p class="subtab-element__sub">Vương Anh Tú</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Tab khám phá -->
+            <div class="tab-pane">
+                <div class="header">
+                    <div class="container">
+                        <div class="header-search">
+                                <div class="personal-account">
+                                    <img src="./music-assets/img-music/img-acc/saotanguocloi.jpg" alt="" class="avatar">
+                                </div>
+                                <div class="search-music">
+                                        <img src="./music-assets/player/search.svg" alt="" class="search-icon">
+                                        <input type="text" class="search-input" placeholder="Tìm nhạc trên thiết bị">
+                                        <img src="./music-assets/img-music/icon-tabs/mic.svg" alt="" class="search-mic">
+                                </div>
+                                <div class="new-notify">
+                                        <img src="./music-assets/img-music/icon-tabs/bell.svg" alt="" class="notify-icon">
+                                        <span class="new-notify__text">0</span>
+                                </div>
+                        </div>
+                        <div class="slider">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="./music-assets/img-music/slider/mau-poster-ca-nhac-7.jpg" class="d-block carousel-item__img" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./music-assets/img-music/slider/tải xuống.jpg" class="d-block carousel-item__img" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./music-assets/img-music/slider/loi-bai-hat-chua-tung-thuong-ai-den-vay-700.jpg" class="d-block carousel-item__img" alt="...">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                    </div>
+                        </div>
+                    </div>                              
+                </div>
+                <div class="contents container">
+                    <div class="category">
+                        <div class="row">
+                            <div class="content-header col-2 col-md-2">
+                                <div class="column__content-header">
+                                    <img src="./music-assets/player/music.svg" alt="" class="content-header__img">
+                                    <span class="content-header__text">Nhạc mới</span>
+                                </div>
+                                
+                            </div>
+                            <div class="content-header col-2 col-md-2">
+                                <div class="column__content-header">
+                                    <img src="./music-assets/player/activity.svg" alt="" class="content-header__img bg-orange">
+                                    <span class="content-header__text">Thể loại</span>
+                                </div>
+                                
+                            </div>
+                            <div class="content-header col-2 col-md-2">
+                                <div class="column__content-header">
+                                    <img src="./music-assets/player/star.svg" alt="" class="content-header__img bg-purple">
+                                    <span class="content-header__text">Top 100</span>
+                                </div>
+                                
+                            </div>
+                            <div class="content-header col-2 col-md-2">
+                                <div class="column__content-header">
+                                    <img src="./music-assets/player/thumbs-up.svg" alt="" class="content-header__img bg-like">
+                                    <span class="content-header__text">Yêu thích</span>
+                                </div>
+                                
+                            </div>
+                            <div class="content-header col-2 col-md-2">
+                                <div class="column__content-header">
+                                    <img src="./music-assets/player/bookmark.svg" alt="" class="content-header__img bg-blue">
+                                    <span class="content-header__text">Sự kiện</span>
+                                </div>
+                                
+                            </div>
+                            <div class="content-header col-2 col-md-2">
+                                <div class="column__content-header">
+                                    <img src="./music-assets/player/monitor.svg" alt="" class="content-header__img bg-red">
+                                    <span class="content-header__text">MV hot</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-list">
+                        <div class="contents-list__heading">Gần đây</div>
+                        <div class="contents-list__content">
+                            <div class="content-list__element">
+                                <img src="./music-assets/contents-img/Playlist.jpg" alt="" class="content-list__img">
+                                <div class="content-list__element-text">
+                                    <h6 class="content-list__element-heading">Playlist</h6>
+                                </div>
+                                
+                            </div>
+                            <div class="content-list__element">
+                                <img src="./music-assets/contents-img/hoquanghieu.jpg" alt="" class="content-list__img">
+                                <div class="content-list__element-text">
+                                    <h6 class="content-list__element-heading">Hồ Quang Hiếu</h6>
+                                    <p class="content-list__element-sub">198k quan tâm</p>
+                                </div>
+                            </div>
+                            <div class="content-list__element">
+                                <img src="./music-assets/contents-img/dinhdung.jpg" alt="" class="content-list__img">
+                                <div class="content-list__element-text">
+                                    <h6 class="content-list__element-heading">Đình Dũng</h6>
+                                    <p class="content-list__element-sub">233k quan tâm</p>
+                                </div>
+                            </div>
+                            <div class="content-list__element">
+                                <img src="./music-assets/contents-img/westlife.jpg" alt="" class="content-list__img">
+                                <div class="content-list__element-text">
+                                    <h6 class="content-list__element-heading">Những bài hát hay nhất của Westlife</h6>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-list">
+                        <div class="contents-list__heading">Gần đây</div>
+                        <div class="contents-list__content">
+                            <div class="content-list__element">
+                                <img src="./music-assets/contents-img/Playlist.jpg" alt="" class="content-list__img">
+                                <div class="content-list__element-text">
+                                    <h6 class="content-list__element-heading">Playlist</h6>
+                                </div>
+                                
+                            </div>
+                            <div class="content-list__element">
+                                <img src="./music-assets/contents-img/hoquanghieu.jpg" alt="" class="content-list__img">
+                                <div class="content-list__element-text">
+                                    <h6 class="content-list__element-heading">Hồ Quang Hiếu</h6>
+                                    <p class="content-list__element-sub">198k quan tâm</p>
+                                </div>
+                            </div>
+                            <div class="content-list__element">
+                                <img src="./music-assets/contents-img/dinhdung.jpg" alt="" class="content-list__img">
+                                <div class="content-list__element-text">
+                                    <h6 class="content-list__element-heading">Đình Dũng</h6>
+                                    <p class="content-list__element-sub">233k quan tâm</p>
+                                </div>
+                            </div>
+                            <div class="content-list__element">
+                                <img src="./music-assets/contents-img/westlife.jpg" alt="" class="content-list__img">
+                                <div class="content-list__element-text">
+                                    <h6 class="content-list__element-heading">Những bài hát hay nhất của Westlife</h6>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents-list">
+                        <div class="contents-list__heading">Gần đây</div>
+                        <div class="contents-list__content">
+                            <div class="content-list__element">
+                                <img src="./music-assets/contents-img/Playlist.jpg" alt="" class="content-list__img">
+                                <div class="content-list__element-text">
+                                    <h6 class="content-list__element-heading">Playlist</h6>
+                                </div>
+                                
+                            </div>
+                            <div class="content-list__element">
+                                <img src="./music-assets/contents-img/hoquanghieu.jpg" alt="" class="content-list__img">
+                                <div class="content-list__element-text">
+                                    <h6 class="content-list__element-heading">Hồ Quang Hiếu</h6>
+                                    <p class="content-list__element-sub">198k quan tâm</p>
+                                </div>
+                            </div>
+                            <div class="content-list__element">
+                                <img src="./music-assets/contents-img/dinhdung.jpg" alt="" class="content-list__img">
+                                <div class="content-list__element-text">
+                                    <h6 class="content-list__element-heading">Đình Dũng</h6>
+                                    <p class="content-list__element-sub">233k quan tâm</p>
+                                </div>
+                            </div>
+                            <div class="content-list__element">
+                                <img src="./music-assets/contents-img/westlife.jpg" alt="" class="content-list__img">
+                                <div class="content-list__element-text">
+                                    <h6 class="content-list__element-heading">Những bài hát hay nhất của Westlife</h6>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <!-- All modal -->
+        <!-- Modal setting-panel -->
+        <div class="settings-panel">
+            <div class="setting-panel__content">
+                <header class="settings-panel__header">
+                    <div class="setting-panel__icon">
+                        <i class="fas fa-arrow-left exit-settings" style="font-size: 20px; width: 20px;"></i>
+                    </div>
+                    <div class="settings-panel__text">
+                        <h5 class="settings-panel__heading">Thiết lập</h5>
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="music-settings">
+                        <div class="music-setting__element">
+                            <div class="setting-panel__icon">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <div class="settings-panel__text">
+                                <p class="music-setting__element-content">Trình phát nhạc</p>
+                            </div>
+                            <div class="setting-panel__icon more-right">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <div class="music-setting__element">
+                            <div class="setting-panel__icon">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="settings-panel__text">
+                            <p class="music-setting__element-content">Tải nhạc</p>
+                            </div>
+                            <div class="setting-panel__icon more-right">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <div class="music-setting__element">
+                            <div class="setting-panel__icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="settings-panel__text">
+                            <p class="music-setting__element-content">Thư viện</p>
+                            </div>
+                            <div class="setting-panel__icon more-right">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                    
+                        </div>
+                        <div class="music-setting__element">
+                            <div class="setting-panel__icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <div class="settings-panel__text">
+                            <p class="music-setting__element-content">Video</p>
+                            </div>
+                            <div class="setting-panel__icon more-right">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <div class="music-setting__element">
+                            <div class="setting-panel__icon">
+                                <i class="fas fa-headphones"></i>
+                            </div>
+                            <div class="settings-panel__text">
+                            <p class="music-setting__element-content">Tai nghe & Bluetooth</p>
+                            </div>
+                            <div class="setting-panel__icon more-right">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <div class="music-setting__element">
+                            <div class="setting-panel__icon">
+                                <i class="far fa-bell"></i>
+                            </div>
+                            <div class="settings-panel__text">
+                            <p class="music-setting__element-content">Thông báo</p>
+                            </div>
+                            <div class="setting-panel__icon more-right">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <div class="music-setting__element">
+                            <div class="setting-panel__icon">
+                                <i class="fas fa-star-and-crescent"></i>
+                            </div>
+                            <div class="settings-panel__text">
+                            <p class="music-setting__element-content">Giao diện</p>
+                            </div>
+                            <div class="setting-panel__icon more-right">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-settings">
+                        <div class="music-setting__element">
+                            <div class="setting-panel__icon">
+                                <i class="fas fa-exclamation" stylefont-size: 20px"></i>
+                            </div>
+                            <div class="settings-panel__text">
+                                <p class="music-setting__element-content">Phiên bản</p>
+                            </div>
+                            <div class="settings-panel__text more-right">
+                                <p class="exclamation-point">1.0</p>
+                            </div>
+                        </div>
+                        <div class="music-setting__element">
+                            <div class="setting-panel__icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="settings-panel__text">
+                                 <p class="music-setting__element-content">Trợ giúp</p>
+                            </div>
+                        </div>
+                        <div class="music-setting__element">
+                            <div class="setting-panel__icon">
+                                <i class="far fa-flag"></i>
+                            </div>
+                            <div class="settings-panel__text">
+                                 <p class="music-setting__element-content">Góp ý, báo lỗi</p>
+                            </div>
+                        </div>
+                        <div class="music-setting__element">
+                            <div class="setting-panel__icon">
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="settings-panel__text">
+                                 <p class="music-setting__element-content">Bình chọn</p>
+                            </div>
+                        </div>
+                        <div class="music-setting__element">
+                            <div class="setting-panel__icon">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <div class="settings-panel__text">
+                                 <p class="music-setting__element-content">Điều khoản dịch vụ</p>
+                            </div>
+                        </div>
+                        <div class="music-setting__element">
+                            <div class="setting-panel__icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <div class="settings-panel__text">
+                                         <p class="music-setting__element-content">Chính sách bảo mật</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+		integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+		<script src="./music-play.js"></script>
+        <script src="./individual.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.settings-panel {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.settings-panel__header {
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.04);
+    display: flex;
+}
+
+.settings-panel__heading {
+    font-size: 22px;
+}
+
+.music-setting__element .fas,
+.music-setting__element .far {
+    font-size: 22px;
+}
+
+.music-settings {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.music-setting__element {
+    padding: 10px 0;
+    display: flex;
+    width: 100%;
+}
+
+.setting-panel__icon {
+    padding-top: 4px;
+    margin-left: 10px;
+}
+
+.settings-panel__text {
+    flex: 1;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.more-right {
+    margin-right: 15px;
+    text-align: right;
+}
