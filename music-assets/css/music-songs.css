@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .musicsongs {
-
+    display: none;
 }
 .header {
     background: url("../songs-img/screen-8.jpg") no-repeat center / cover;
@@ -17,11 +17,11 @@
 }
 
 .header-content {
-    margin: 15px 10px;
+    margin: 10px 0;
 }
 .music-songs__heading {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 .heading-icon{
@@ -41,6 +41,10 @@
     display: flex;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.9);
+}
+
+.music-songs__subtext i {
+    margin-top: 5px;
 }
 
 .music-songs__subtext-heading {
@@ -72,7 +76,7 @@
 
 }
 .music-songs__contents {
-    margin-top: 130px;
+    margin-top: 150px;
     border-top: 1px solid #fff;
     border-radius: 8px;
 }
