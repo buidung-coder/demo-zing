@@ -169,6 +169,42 @@
     .notify-icon {
         width: 40px;
     }
+
+    /* reponsive setting */
+    .settings-panel__header {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .settings-panel__heading {
+        font-size: 30px;
+    }
+    
+    .exit-settings {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    .music-settings {
+        margin-top: 80px;
+        margin-bottom: 15px;
+
+    }
+    
+    .music-setting__element .fas,
+    .music-setting__element .far {
+        font-size: 28px;
+    }
+    
+    .music-setting__element {
+        padding: 15px 0;
+    }
+    
+    .settings-panel__text {
+        font-size: 28px;
+    }
+    
     /* reponsive phần khám phá */
     .carousel-item__img {
         height: 335px;
@@ -267,6 +303,9 @@
     .subtab-element__sub {
         font-size: 26px;
     }
+
+    /* reponsive phần bài hát */
+    
 }
 
 @media (max-width: 739px){

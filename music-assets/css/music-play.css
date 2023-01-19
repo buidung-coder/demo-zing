@@ -93,7 +93,7 @@
     border-radius: 50%;
 }
 
-.slider {
+.slider-pane {
     width: 100%;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .contents {
-    padding-bottom: 150px;
+    padding-bottom: 80px;
 }
 
 

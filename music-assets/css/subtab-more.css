@@ -1,0 +1,45 @@
+.modalsubtab-more {
+    display: none;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    z-index: 2;
+}
+
+.subtab-more__content {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.exit-subtabmore {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.subtab-more__element {
+    display: flex;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.subtab-more__element .fas {
+    margin-top: 6px;
+    margin-right: 10px;
+}
+

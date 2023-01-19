@@ -1,0 +1,268 @@
+.pd-0-10px {
+  padding: 0 10px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.mr-10px {
+  margin-right: 10px;
+}
+
+.player {
+  display: none;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    background-color: #076071;
+    color: #fff;
+    overflow-y: auto;
+}
+
+.player::-webkit-scrollbar {
+  display: none;
+}
+.player-header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #076071;
+    padding: 10px 10px;
+    justify-content: space-between;
+
+}
+
+.header-left .fas {
+    margin-top: 8px;
+    padding-right: 10px;
+}
+.name-song {
+    font-size: 20px;
+}
+
+.title-sub .far {
+    margin-top: 4px;
+}
+.title-sub .song-sticker {
+    font-size: 10px;
+    height: 18px;
+    line-height: 14px;
+    margin-top: 3px;
+}
+
+.header-right .fas{
+    padding-left: 10px;
+}
+
+.player-contents {
+  margin-top: 0;
+}
+
+.cd {
+  border: none;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 100px;
+  width: 300px;
+}
+
+.cd-thumb {
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+  .cd-img {
+    width: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    background-size: cover;
+    margin: auto;
+  }
+
+  .lyrics {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    max-height: 20px;
+    overflow: auto;
+    margin-bottom: 40px;
+  }
+
+  .lyrics::-webkit-scrollbar {
+    display: none;
+  }
+
+  .player-control {
+    padding: 20px 20px;
+    background-color: #076071;
+  }
+  .control {
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px 0 8px 0;
+  }
+  
+  .control .btn {
+    color: #666;
+    padding: 18px;
+    font-size: 18px;
+  }
+  
+  .control .btn.active {
+    color: var(--primary-color);
+  }
+  
+  .control .btn-toggle-play {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+  }
+  
+  .progress {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 6px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    border-radius: 4px;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+  }
+  
+  .progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 6px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .sub-control {
+    justify-content: space-between;
+  }
+
+  .list-player {
+    font-size: 14px;
+  }
+
+  .list-player .fas {
+    margin-top: 4px;
+    margin-left: 10px;
+  }
+
+  .comments {
+    z-index: 10;
+    margin: 0 15px;
+    z-index: 10;
+    overflow-y: auto;
+  }
+
+  .comment-header {
+    padding: 20px 10px;
+    color: #000;
+    border-radius: 24px;
+    background-color: #fff;
+  }
+
+  .comment-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .other-comments {
+    margin-bottom: 20px;
+  }
+
+  .user__img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .comment-content__main {
+    font-size: 18px;
+  }
+
+  .other-user__name {
+    font-size: 18px;
+    font-weight: 550;
+  }
+
+  .update-time {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .comment-content__sub {
+    font-size: 14px;
+  }
+
+  .input-comment {
+    flex: 1;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    padding-left: 15px;
+  }
+
+  .other-content {
+    border-radius: 24px;
+    color: #000;
+  }
+
+  .other-content__heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #fff;
+  }
+
+  .other-element {
+    padding-top: 15px;
+    margin: 10px 0;
+    border-radius: 24px;
+    background-color: #fff;
+  }
+
+ .other-element__header {
+   display: flex;
+ } 
+
+ .other-element__content img {
+    margin: 10px 0;
+    width: 100%;
+ }
+
+ .interactive-results {
+   justify-content: space-between;
+   padding: 10px 0;
+   border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+ }
+
+ .interactive-functions {
+   font-size: 18px;
+   padding: 10px 10px;
+   justify-content: space-between;
+ }
+
+ .interactive-functions i {
+   color: rgba(0, 0, 0, 0.6);
+   padding-top: 4px;
+   padding-right: 10px;
+ }

@@ -59,6 +59,7 @@ p {
 .subtab-item.active .subtab-item__content {
     color: #000;
 }
+
 .subtab-more__icon {
     margin-top: 10px;
     font-size: 20px;
@@ -192,19 +193,17 @@ p {
     font-size: 18px;
     padding-top: 20px;
 }
+
 .recently-begin__img {
     background-color: #3366CC;
     
 }
+
 .recently-img {
     width: 60px;
     height: 60px;
     border-radius: 8px;
     margin-right: 10px;
-}
-
-.recently-content {
-
 }
 
 .recently-content__title {
